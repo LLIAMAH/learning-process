@@ -49,7 +49,7 @@ export default function CurrentCourse() {
     return (
         <>
             {user?.currentCourse == null && (
-                <button className="btn btn-primary" onClick={handleUpdateCourse}>Add Course</button>
+                <button className="btn btn-primary mt-2" onClick={handleUpdateCourse}>Add Course</button>
             )}
             {user?.currentCourse && (
                 <>
