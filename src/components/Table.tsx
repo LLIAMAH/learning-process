@@ -56,7 +56,7 @@ const Table = <T extends object>({data: initialData, columns, onChange}
                         </td>
                     ))}
                 </tr>
-            ))}
+            ))}Ещщ уфк
             </tbody>
         </table>
     );

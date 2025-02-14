@@ -3,10 +3,10 @@ import {EStatus} from "../interfaces/interfaces.ts";
 export const USER = {
     position: 'Software developer',
     fullName: 'Vasiliy Himchenko',
-    photo: 'https://i.pinimg.com/280x280_RS/63/ef/46/63ef4675c2246d3dcf0b35548f123652.jpg',
+    photo: 'https://picsum.photos/200/200',
     location: 'Riga, Latvia',
     department: 'Development',
-    email: 'vasilijs.himcenko@emergn.com',
+    email: 'aaaaaaaaaaa@aaaaaaa.com',
     phone: '+371 26321658',
     currentCourse: {
         title: 'React',
