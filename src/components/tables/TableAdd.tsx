@@ -2,10 +2,6 @@ import {TableProps} from "./Table.tsx";
 import * as React from "react";
 import {useState} from "react";
 
-export interface TableAddProps<T> extends TableProps<T> {
-    setSections: (sections: T[]) => void;
-}
-
 const TableAdd = <T extends object>({data: initialData, columns, onChange}
                                  : TableProps<T>) => {
     const [data, setData] = useState(initialData);
