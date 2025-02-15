@@ -29,16 +29,15 @@ export interface IUser {
     department: string;
     email: string;
     phone: string;
-    currentCourse: ICourse;
+    currentCourse: ICourse | null;
     history: ICourse[];
     subordinates: IUser[];
 }
 
 export interface ICourse {
     title: string;
-    source: string;
-    status: string | EStatus;
-    sections: ICourseSection[];
+    source: string | undefined;
+    sections: ICourseSection[] | undefined;
 }
 
 export interface ICourseSection {

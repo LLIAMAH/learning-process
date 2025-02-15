@@ -1,6 +1,6 @@
 import {PropsWithChildren, useState} from "react";
-import CurrentCourse from "./CurrentCourse.tsx";
-import CoursesHistory from "./CoursesHistory.tsx";
+import CurrentCourse from "./content/CurrentCourse.tsx";
+import CoursesHistory from "./content/CoursesHistory.tsx";
 import {EView} from "../interfaces/interfaces.ts";
 
 export interface IUsersContent extends PropsWithChildren {

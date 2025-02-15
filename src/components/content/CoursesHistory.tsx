@@ -1,6 +1,6 @@
-import Table from "./Table.tsx";
+import Table from "../tables/Table.tsx";
 import {useUser} from "./ContentContext.tsx";
-import {ICourse} from "../interfaces/interfaces.ts";
+import {ICourse} from "../../interfaces/interfaces.ts";
 
 const COLUMNS = ['title', 'source', 'status']
     .map((key) => ({
@@ -18,7 +18,7 @@ export default function CoursesHistory() {
 
     return (
         <>
-            <Table columns={COLUMNS} data={user?.history}/>
+            <Table columns={COLUMNS} canAddRows={false} data={user?.history}/>
         </>
     );
 }

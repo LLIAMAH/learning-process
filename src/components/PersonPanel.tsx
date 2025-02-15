@@ -1,4 +1,4 @@
-import {useUser} from "./ContentContext.tsx";
+import {useUser} from "./content/ContentContext.tsx";
 
 export function PersonPanel() {
     const { user } = useUser();

@@ -1,15 +1,17 @@
 import * as React from "react";
 import {useState} from "react";
-import {EStatus} from "../interfaces/interfaces.ts";
+import {EStatus} from "../../interfaces/interfaces.ts";
 
 export interface Column<T> {
     header: string;
     accessor: keyof T;
+    columnStyle?: string;
     type: string;
     options?: string[] | null;
 }
 
 export interface TableProps<T> {
+    canAddRows: boolean;
     data: T[];
     columns: Column<T>[];
     onChange?: (updatedData: T[]) => void;

@@ -2,7 +2,7 @@ import './App.css'
 import NavBar from "./components/NavBar.tsx";
 import {PersonPanel} from "./components/PersonPanel.tsx";
 import UserContent from "./components/UserContent.tsx";
-import {UserProvider} from "./components/ContentContext.tsx";
+import {UserProvider} from "./components/content/ContentContext.tsx";
 
 function App() {
 
