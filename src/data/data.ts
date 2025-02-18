@@ -8,7 +8,27 @@ export const USER = {
     department: 'Development',
     email: 'aaaaaaaaaaa@aaaaaaa.com',
     phone: '+371 26321658',
-    currentCourse: null,
+    currentCourse: {
+        title: 'Course Test',
+        source: 'Course Test',
+        sections: [
+            {
+                sequence: 1,
+                title: 'Sequence 1',
+                status: EStatus[EStatus.Pending],
+            },
+            {
+                sequence: 2,
+                title: 'Sequence 2',
+                status: EStatus[EStatus.Pending],
+            },
+            {
+                sequence: 3,
+                title: 'Sequence 3',
+                status: EStatus[EStatus.Pending],
+            },
+        ]
+    },
     history: [
         {
             title: 'Course 1',

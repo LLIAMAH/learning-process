@@ -7,11 +7,10 @@ export interface Column<T> {
     accessor: keyof T;
     columnStyle?: string;
     type: string;
-    options?: string[] | null;
+    options?: EStatus[] | null;
 }
 
 export interface TableProps<T> {
-    canAddRows: boolean;
     data: T[];
     columns: Column<T>[];
     onChange?: (updatedData: T[]) => void;
